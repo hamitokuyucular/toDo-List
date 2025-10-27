@@ -3,7 +3,7 @@ const listDOM = document.querySelector("#list")
 
 liveToastBtn.addEventListener("click", newElement)
 
-// 🔹 Sayfa açıldığında görevleri yükle
+// sayfa açıldığında görevleri yükle
 document.addEventListener("DOMContentLoaded", () => {
   const savedTasks = localStorage.getItem("tasks");
   if (savedTasks) {
@@ -51,4 +51,3 @@ function checkFunction(item) {
     localStorage.setItem("tasks", listDOM.innerHTML);
   });
 }
-
